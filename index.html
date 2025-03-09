@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Font Awesome for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* CSS for scrolling text */
+        header p {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-text 10s linear infinite;
+        }
+
+        @keyframes scroll-text {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Styling for social media icons */
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #0073e6; /* Hover effect for icons */
+        }
+
+        /* Admin login button */
+        .admin-btn {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #7d8286;
+            color: #fff;
+            font-size: 15px;
+            text-decoration: none;
+            border-radius: 1px;
+        }
+
+        .admin-btn:hover {
+            background-color: #00b53c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Vishal Shah</h2>
+        <p>Frontend Developer | HTML | CSS | JAVASCRIPT | REACT | PHP | MYSQL | Power-Bi</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <img src="images/Profle_Photo.jpg" alt="Profile Picture">
+            <p>Welcome to my portfolio! I am a passionate and skilled Frontend Developer with expertise in crafting modern, responsive web applications. </p>
+            <p>With a solid foundation in HTML, CSS, JavaScript, and React, I am dedicated to creating seamless, user-centric digital experiences. </p>
+            <p>My focus is on writing clean, efficient, and maintainable code while ensuring that every project meets the highest standards of performance and accessibility. </p>
+            <p>Whether building from scratch or optimizing existing applications, I am committed to delivering top-tier solutions that drive engagement and user satisfaction. </p>
+            <p><b>Let’s collaborate to bring your web development ideas to life!</b></p>
+        </section>
+    </main>
+
+    <section class="resume">
+        <h2>My Resume</h2>
+        <a href="resume.pdf" download="Vishal_Resume.pdf" class="btn">Download Resume</a>
+        <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+    </section>
+
+    <!-- Social media icons -->
+    <section class="social-icons">
+        <a href="https://www.linkedin.com/in/vishal-shah-17a411101/" target="_blank" class="fab fa-linkedin"></a>
+        <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+        <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+        <a href="https://github.com/vnshah143?tab=projects" target="_blank" class="fab fa-github"></a>
+    </section>
+</body>
+    <!-- Admin login button -->
+    <a href="admin-login.php" class="admin-btn">Admin Login</a>
+</html>
